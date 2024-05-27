@@ -9,8 +9,8 @@ const SingleContentDemo = () => {
   return (
     <>
     <div className="container relative">
-        <div className="py-16 lg:py-28">
-          <Heading>Latest audio articles</Heading>
+        <div className="py-16">
+          <Heading>Latest audios</Heading>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             <Card16Podcast post={DEMO_POSTS_AUDIO[10]} />
             <Card16Podcast post={DEMO_POSTS_AUDIO[11]} />

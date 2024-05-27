@@ -7,53 +7,51 @@ export interface WidgetFooterMenu {
   id: string;
   title: string;
   menus: CustomLink[];
+
 }
 
 const widgetMenus: WidgetFooterMenu[] = [
   {
     id: "5",
-    title: "Getting started",
+    title: "Our Address",
     menus: [
-      { href: "/", label: "Installation" },
-      { href: "/", label: "Release Notes" },
-      { href: "/", label: "Upgrade Guide" },
-      { href: "/", label: "Browser Support" },
-      { href: "/", label: "Editor Support" },
+      { href: "/", label: "33Crores Pooja Products Pvt Ltd ,403, 4th Floor, O-Hub IDCO Sez Infocity,Bhubaneswar 751024,Odisha , Bharat" },
+      { href: "/", label: "Phone: (91)-9776-88888-7" },
+      { href: "/", label: "Email: info@example.com" },
     ],
   },
   {
     id: "1",
     title: "Explore",
     menus: [
-      { href: "/", label: "Design features" },
-      { href: "/", label: "Prototyping" },
-      { href: "/", label: "Design systems" },
-      { href: "/", label: "Pricing" },
-      { href: "/", label: "Customers" },
+      { href: "/", label: "About Us" },
+      { href: "/", label: "Our Story" },
+      { href: "/", label: "Contact Us" },
+      { href: "/", label: "Privacy & Policy" },
+      
+     
     ],
   },
   {
     id: "2",
-    title: "Resources",
+    title: "Newsletter Sign Up",
     menus: [
-      { href: "/", label: "Best practices" },
-      { href: "/", label: "Support" },
-      { href: "/", label: "Developers" },
-      { href: "/", label: "Learn design" },
-      { href: "/", label: "What's new" },
+      { href: "/", label: "Receive updates about our products & promotions." },
+      {href: "/", label: "Newsletter Sign Up", isForm: true },
+      
     ],
   },
-  {
-    id: "4",
-    title: "Community",
-    menus: [
-      { href: "/", label: "Discussion Forums" },
-      { href: "/", label: "Code of Conduct" },
-      { href: "/", label: "Community Resources" },
-      { href: "/", label: "Contributing" },
-      { href: "/", label: "Concurrent Mode" },
-    ],
-  },
+  // {
+  //   id: "4",
+  //   title: "Community",
+  //   menus: [
+  //     { href: "/", label: "Discussion Forums" },
+  //     { href: "/", label: "Code of Conduct" },
+  //     { href: "/", label: "Community Resources" },
+  //     { href: "/", label: "Contributing" },
+  //     { href: "/", label: "Concurrent Mode" },
+  //   ],
+  // },
 ];
 
 const Footer: React.FC = () => {
@@ -66,23 +64,41 @@ const Footer: React.FC = () => {
         <ul className="mt-5 space-y-4">
           {menu.menus.map((item, index) => (
             <li key={index}>
-              <a
-                key={index}
-                className="text-neutral-6000 dark:text-neutral-300 hover:text-black dark:hover:text-white"
-                href={item.href}
-              >
-                {item.label}
-              </a>
+              {item.isForm ? (
+                <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+                  <input
+                    type="email"
+                    className="w-full p-2 border border-neutral-300 rounded-md"
+                    placeholder="Enter your email"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    className="w-full p-2 bg-blue-500 text-white rounded-md"
+                  >
+                    Sign Up
+                  </button>
+                </form>
+              ) : (
+                <a
+                  key={index}
+                  className="text-neutral-6000 dark:text-neutral-300 hover:text-black dark:hover:text-white"
+                  href={item.href}
+                >
+                  {item.label}
+                </a>
+              )}
             </li>
           ))}
         </ul>
       </div>
     );
   };
+  
 
   return (
     <div className="nc-Footer relative py-16 lg:py-28 border-t border-neutral-200 dark:border-neutral-700">
-      <div className="container grid grid-cols-2 gap-y-10 gap-x-5 sm:gap-x-8 md:grid-cols-4 lg:grid-cols-5 lg:gap-x-10 ">
+      <div className="container grid grid-cols-2 gap-y-10 gap-x-5 sm:gap-x-8 md:grid-cols-4 lg:grid-cols-4 lg:gap-x-10 ">
         <div className="grid grid-cols-4 gap-5 col-span-2 md:col-span-4 lg:md:col-span-1 lg:flex lg:flex-col">
           <div className="col-span-2 md:col-span-1">
             <Logo />

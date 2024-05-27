@@ -5,6 +5,7 @@ export interface CustomLink {
   label: string;
   href: Route;
   targetBlank?: boolean;
+  isForm?: boolean;
 }
 
 //  ##########  PostDataType ######## //

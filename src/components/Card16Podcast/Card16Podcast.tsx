@@ -8,6 +8,8 @@ import Link from "components/Link";
 import Image from "components/Image";
 import ButtonPlayMusicPlayer from "../ButtonPlayMusicPlayer";
 import { PauseIcon, PlayIcon } from "@heroicons/react/24/solid";
+import SingleMetaAction2 from "app/(singles)/SingleMetaAction2";
+
 
 export interface Card16PodcastProps {
   className?: string;
@@ -55,9 +57,7 @@ const Card16Podcast: FC<Card16PodcastProps> = ({
 
       {/* ABSOLUTE */}
       <Link href={href} className="absolute inset-0"></Link>
-      <span className="absolute top-3 inset-x-3">
-        <CategoryBadgeList categories={categories} />
-      </span>
+      
 
       {/* MAIN CONTENT */}
       <div className="w-11/12 transform -mt-32 ">
@@ -76,6 +76,9 @@ const Card16Podcast: FC<Card16PodcastProps> = ({
           />
         </div>
         <div className="p-5 mt-5 bg-white dark:bg-neutral-900 shadow-xl dark:shadow-2xl rounded-3xl rounded-tl-none flex flex-col flex-grow ">
+        <span className="">
+        Jul 22
+      </span>
           <h2 className="nc-card-title block sm:text-lg lg:text-xl font-semibold text-neutral-900 dark:text-neutral-100 ">
             <Link href={href} className="line-clamp-1" title={title}>
               {title}
@@ -84,10 +87,12 @@ const Card16Podcast: FC<Card16PodcastProps> = ({
           <span className="block text-sm text-neutral-500 dark:text-neutral-400 mt-3 mb-5">
             <span className="line-clamp-2">{desc}</span>
           </span>
-          <div className="flex items-end justify-between mt-auto">
+          <SingleMetaAction2 />
+         
+          {/* <div className="flex items-end justify-between mt-auto">
             <PostCardLikeAndComment className="relative" />
             <PostCardSaveAction className="relative" />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

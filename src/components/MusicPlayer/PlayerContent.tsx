@@ -113,10 +113,10 @@ const PlayerContent: FC<PlayerContentProps> = ({
             </span>
           </div>
         </Link>
-        <div className="hidden xl:flex flex-shrink-0 px-6 space-x-2.5">
+        {/* <div className="hidden xl:flex flex-shrink-0 px-6 space-x-2.5">
           <PostCardLikeAction />
           <NcBookmark />
-        </div>
+        </div> */}
       </div>
     );
   };

@@ -68,14 +68,14 @@ const PageSingleAudio = () => {
             </div>
             <div className="flex flex-col space-y-5">
               <div className="flex flex-col sm:flex-row sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <div>
+                {/* <div>
                   <Badge name="S1 EP. 128" />
-                </div>
-                <span className="text-neutral-500 dark:text-neutral-400">
-                  Adventures in DevOps
-                  <span className="mx-2">·</span>
+                </div> */}
+                {/* <span className="text-neutral-500 dark:text-neutral-400">
+                  Adventures in DevOps */}
+                  {/* <span className="mx-2">·</span> */}
                   Jul 22
-                </span>
+                {/* </span> */}
               </div>
               <SingleTitle title={"Programming Languages"} />
               <span className="hidden lg:block text-lg text-neutral-500 dark:text-neutral-400">
