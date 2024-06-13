@@ -59,7 +59,8 @@ const PageSingleAudio = () => {
 
         {/* SINGLE_AUDIO HEADER */}
         <header className="relative container ">
-          <div className="bg-white dark:bg-neutral-900 shadow-2xl px-5 py-7 md:p-11 rounded-2xl md:rounded-[40px] flex flex-col sm:flex-row items-center justify-center space-y-10 sm:space-y-0 sm:space-x-11">
+          <div className=" dark:bg-neutral-900 shadow-2xl px-5 py-7 md:p-11 rounded-2xl md:rounded-[40px] flex flex-col sm:flex-row items-center justify-center space-y-10 sm:space-y-0 sm:space-x-11"  style={{
+    backgroundColor: '#f5984b',color:'#fff'}}>
             <div className="w-1/2 sm:w-1/4 flex-shrink-0">
               <ButtonPlayMusicPlayer
                 renderChildren={renderButtonPlay}
@@ -67,7 +68,7 @@ const PageSingleAudio = () => {
               />
             </div>
             <div className="flex flex-col space-y-5">
-              <div className="flex flex-col sm:flex-row sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
+              <div className="flex flex-col sm:flex-row sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 text-neutral-900">
                 {/* <div>
                   <Badge name="S1 EP. 128" />
                 </div> */}
@@ -78,7 +79,7 @@ const PageSingleAudio = () => {
                 {/* </span> */}
               </div>
               <SingleTitle title={"Programming Languages"} />
-              <span className="hidden lg:block text-lg text-neutral-500 dark:text-neutral-400">
+              <span className="hidden lg:block text-lg ">
                 We’re an online magazine dedicated to covering the best in
                 international product design. We started as a little blog back
                 in 2002 covering student work and over time

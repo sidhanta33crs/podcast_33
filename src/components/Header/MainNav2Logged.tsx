@@ -34,7 +34,8 @@ const MainNav2Logged: FC<MainNav2LoggedProps> = () => {
   };
 
   return (
-    <div className="nc-MainNav2Logged relative z-10 bg-white dark:bg-neutral-900 border-b border-slate-100 dark:border-slate-700">
+    <div className="nc-MainNav2Logged relative z-10 dark:bg-neutral-900 border-b border-slate-100 dark:border-slate-700"  style={{
+      backgroundColor: '#f5984b',color: '#fff !important'}}>
       <div className="container ">{renderContent()}</div>
     </div>
   );
