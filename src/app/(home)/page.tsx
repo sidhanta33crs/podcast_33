@@ -55,7 +55,7 @@ const PageSingleAudio = () => {
     <Layout>
       <div className={`relative pt-8 lg:pt-16`}>
         {/* Overlay */}
-        <div className="bg-primary-50 dark:bg-neutral-800 absolute top-0 inset-x-0 h-60 w-full"></div>
+        <div className=" absolute top-0 inset-x-0 h-60 w-full"></div>
 
         {/* SINGLE_AUDIO HEADER */}
         <header className="relative container ">
@@ -84,6 +84,9 @@ const PageSingleAudio = () => {
                 in 2002 covering student work and over time
               </span>
               <SingleMetaAction2 />
+            </div>
+            <div className="" style={{ width: '1367px' }}>
+              <Image src="/jj.jpg" className="" alt="" style={{ height: '323px', borderRadius: '1.5rem' }}/>
             </div>
           </div>
         </header>
