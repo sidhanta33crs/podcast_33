@@ -28,7 +28,7 @@ const Card16Podcast: FC<Card16PodcastProps> = ({
   const renderListenButtonDefault = (state?: "playing") => {
     return (
       <div
-        className={`w-14 h-14 flex items-center justify-center rounded-full bg-neutral-50  cursor-pointer`} style={{color:'#f5984b'}}
+        className={`w-14 h-14 flex items-center justify-center rounded-full bg-neutral-50  cursor-pointer`} style={{color:'#B90B0B'}}
       >
         {state === "playing" ? (
           <PauseIcon className="w-8 h-8" />
@@ -76,7 +76,7 @@ const Card16Podcast: FC<Card16PodcastProps> = ({
           />
         </div>
         <div className="p-5 mt-5 bg-white dark:bg-neutral-900  dark:shadow-2xl rounded-3xl rounded-tl-none flex flex-col flex-grow " style={{
-    boxShadow: '0 0 #f5984b, 0 0 #f5984b, 17px 23px 42px -5px rgb(245 152 75 / 60%), 0 8px 10px -6px #f5984b'
+    boxShadow: 'rgb(185 11 11) 0px 0px, rgb(185 11 11) 0px 0px, rgb(213 165 135 / 60%) 17px 23px 42px -5px, rgb(185 11 11) 0px 8px 10px -6px'
   }}>
         <span className="">
         Jul 22

@@ -60,7 +60,7 @@ const PageSingleAudio = () => {
         {/* SINGLE_AUDIO HEADER */}
         <header className="relative container ">
           <div className=" dark:bg-neutral-900 shadow-2xl px-5 py-7 md:p-11 rounded-2xl md:rounded-[40px] flex flex-col sm:flex-row items-center justify-center space-y-10 sm:space-y-0 sm:space-x-11"  style={{
-    backgroundColor: '#f5984b',color:'#fff'}}>
+    backgroundColor: '#fff',color:'#000'}}>
             <div className="w-1/2 sm:w-1/4 flex-shrink-0">
               <ButtonPlayMusicPlayer
                 renderChildren={renderButtonPlay}
